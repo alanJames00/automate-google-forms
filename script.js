@@ -47,4 +47,10 @@ async function submitForm(submission) {
 	}
 }
 
-async function main() { }
+async function main() {
+	for (let submission of submissions) {
+		await submitForm(submission);
+	}
+}
+
+main();
